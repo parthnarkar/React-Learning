@@ -1,9 +1,13 @@
-
+import Parth from "./parth"
 
 function App() {
 
   return (
-    <h1>Parth Narkar - Vite</h1>
+    <>
+    <Parth />
+    <h1>Parth Narkar</h1>
+    <p>Information Technology</p>
+    </>
   )
 }
 
