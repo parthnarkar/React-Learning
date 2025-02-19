@@ -1,11 +1,12 @@
 import Parth from "./parth"
 
 function App() {
+  const username = "parthnarkar";
 
   return (
     <>
     <Parth />
-    <h1>Parth Narkar</h1>
+    <h1>Parth Narkar {username}</h1> 
     <p>Information Technology</p>
     </>
   )
