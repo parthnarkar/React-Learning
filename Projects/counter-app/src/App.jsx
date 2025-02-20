@@ -5,23 +5,34 @@ import './App.css'
 function App() {
   //let counter = 15;
 
-  let [counter , setCounter] = useState(15)
+  let [counter, setCounter] = useState(15)
 
   const addValue = () => {
-    if(counter === 20){
+    if (counter === 20) {
       alert("Counter will not go above 20!")
     }
-    else{
+    else {
       setCounter(counter + 1);
+      //INTERVIEW QUESTION
+      /*
+        //THE BELOW, On every click it will increment by 1 only.
+        setCounter(counter + 1);
+        setCounter(counter + 1);
+        setCounter(counter + 1);
+        //THE BELOW, On every click it will increment by 3, similarly for decrementing
+        setCounter(prevCounter => prevCounter + 1)
+        setCounter(prevCounter => prevCounter + 1)
+        setCounter(prevCounter => prevCounter + 1)
+      */
     }
-    
+
   }
 
   const removeValue = () => {
-    if(counter === 0){
+    if (counter === 0) {
       alert("Counter will not go below ZERO!")
     }
-    else{
+    else {
       setCounter(counter - 1);
     }
   }
@@ -36,7 +47,7 @@ function App() {
       >Add Value</button>
       <br />
       <button
-       onClick={removeValue} 
+        onClick={removeValue}
       >Remove Value</button>
     </>
   )
